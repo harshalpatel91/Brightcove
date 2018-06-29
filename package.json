@@ -9,6 +9,5 @@
     "request": "*",
     "path": "*"
   },
-  "dependencies": {
-  }
+  "dependencies": {}
 }

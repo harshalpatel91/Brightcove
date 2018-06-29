@@ -6,17 +6,17 @@ var request = require('request');
 var path = require('path');
 
 
-    var URL = "https://dev-new-api-contentstack.io";
+var URL = "https://oauth.brightcove.com";
 
-    var port = process.env.PORT || 5000;
+var port = process.env.PORT || 5000;
 
 
 
-    app.use('/', function(req, res) {
-        req.pipe(request(URL + req.url)).pipe(res);
-    });
+app.use('/', function(req, res) {
+    req.pipe(request(URL + req.url)).pipe(res);
+});
 
-    
-    app.listen(port);
+
+app.listen(port);
 
 
