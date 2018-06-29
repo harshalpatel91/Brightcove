@@ -1,0 +1,11 @@
+{
+  "name": "brightcove-proxy",
+  "version": "1.0.0",
+  "devDependencies": {
+    "express": "*",
+    "request": "*",
+    "path": "*",
+  },
+  "dependencies": {
+  }
+}
