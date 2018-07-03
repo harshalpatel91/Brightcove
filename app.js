@@ -18,8 +18,7 @@ app.use('/brightcove', function(req, res) {
 
 app.use('/oauth', function(req, res) {
 	var oauthUrl = "https://oauth.brightcove.com";
-	console.log("req",req, req.url);
-    req.pipe(request(oauthUrl + req.url)).pipe(res);
+	req.pipe(request(oauthUrl + req.url)).pipe(res);
 
 });
 
