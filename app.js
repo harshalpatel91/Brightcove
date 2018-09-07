@@ -22,6 +22,12 @@ app.use('/oauth', function(req, res) {
 
 });
 
+app.use('/watsonplatform', function(req, res) {
+	var watsonplatformUrl = "https://gateway-wdc.watsonplatform.net/natural-language-understanding/api/v1/analyze?version=2018-03-19";
+	req.pipe(request(watsonplatformUrl + req.url)).pipe(res);
+
+});
+
 
 app.listen(port);
 
